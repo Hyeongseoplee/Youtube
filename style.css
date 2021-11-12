@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Roboto:wght@100;300;400&display=swap");
+
+:root {
+    --header-grey: #202020;
+    --red-color: #f73000;
+    --blue-color: #2154ce;
+    --main-grey: #181818;
+    --light-grey: #303030;
+    --font-color: #ffffff;
+}
+
+* {
+    font-family: "Roboto", sans-serif;
+    color: var(--font-color);
+    font-size: 10px;
+}
+
+body {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Header */
+.header {
+    background-color: var(--header-grey);
+}
+
+.header .header-container {
+    padding: 0px 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Header Start */
+.header .header-container .header-start {
+    display: Flex;
+    align-items: center;
+}
+
+.header .header-container .header-start .guide-button .fa-bars {
+    color: rgba(255, 255, 255, 0.954);
+    font-size: 20px;
+    padding: 8px;
+}
+
+.header .header-container .header-start .header-logo {
+    display: flex;
+    align-items: center;
+    padding: 18px 16px;
+    font-size: 26px;
+    letter-spacing: -7px;
+    position: relative;
+}
+
+.header .header-container .header-start .header-logo .logo-title {
+    display: inline-block;
+    font-size: 22px;
+    letter-spacing: -1px;
+    transform: scale(0.8, 1.2);
+}
+
+.header .header-container .header-start .header-logo .fa-youtube {
+    color: var(--red-color);
+    font-size: 26px;
+}
+
+.header .header-container .header-start .header-logo .country-code {
+    font-weight: 100;
+    font-size: 10px;
+    letter-spacing: 1px;
+    position: absolute;
+    right: 0px;
+    top: 15px;
+    color: white;
+}
