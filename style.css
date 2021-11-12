@@ -4,7 +4,7 @@
     --header-grey: #202020;
     --red-color: #f73000;
     --blue-color: #2154ce;
-    --main-grey: #181818;
+    --dark-grey: #181818;
     --light-grey: #303030;
     --font-color: #ffffff;
 }
@@ -13,6 +13,8 @@
     font-family: "Roboto", sans-serif;
     color: var(--font-color);
     font-size: 10px;
+    font-weight: 100;
+    box-sizing: border-box;
 }
 
 body {
@@ -23,6 +25,7 @@ body {
 /* Header */
 .header {
     background-color: var(--header-grey);
+    width: 100%;
 }
 
 .header .header-container {
@@ -33,18 +36,18 @@ body {
 }
 
 /* Header Start */
-.header .header-container .header-start {
+.header-container .header-start {
     display: Flex;
     align-items: center;
 }
 
-.header .header-container .header-start .guide-button .fa-bars {
+.header-container .header-start .guide-button .fa-bars {
     color: rgba(255, 255, 255, 0.954);
     font-size: 20px;
     padding: 8px;
 }
 
-.header .header-container .header-start .header-logo {
+.header-container .header-start .header-logo {
     display: flex;
     align-items: center;
     padding: 18px 16px;
@@ -53,24 +56,102 @@ body {
     position: relative;
 }
 
-.header .header-container .header-start .header-logo .logo-title {
+.header-container .header-start .header-logo .logo-title {
     display: inline-block;
     font-size: 22px;
     letter-spacing: -1px;
     transform: scale(0.8, 1.2);
 }
 
-.header .header-container .header-start .header-logo .fa-youtube {
+.header-container .header-start .header-logo .fa-youtube {
     color: var(--red-color);
     font-size: 26px;
 }
 
-.header .header-container .header-start .header-logo .country-code {
+.header-container .header-start .header-logo .country-code {
     font-weight: 100;
     font-size: 10px;
-    letter-spacing: 1px;
+    letter-spacing: -1px;
     position: absolute;
-    right: 0px;
+    right: 8px;
     top: 15px;
     color: white;
+}
+
+/* Header Center */
+
+.header-center {
+    display: flex;
+    width: 70%;
+}
+
+.header-center .searchbox {
+    display: Flex;
+    justify-content: center;
+    width: 80%;
+    height: 36px;
+    box-sizing: border-box;
+    border: 1px solid var(--light-grey);
+}
+
+.header-center .searchbox .search-form {
+    width: 85%;
+    height: 100%;
+}
+
+.header-center .searchbox .search-form input {
+    all: unset;
+    width: 100%;
+    height: 100%;
+    background-color: var(--dark-grey);
+    padding-left: 5px;
+}
+
+.header-center .searchbox .search-form input:focus {
+    border: 1px solid var(--blue-color);
+    z-index: 10;
+}
+
+.header-center .searchbox .search-form input::placeholder {
+    color: #acacac;
+    font-weight: 100;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+.header-center .searchbox .search-form input[type="text"] {
+    font-size: 14px;
+    letter-spacing: 1px;
+    font-weight: lighter;
+}
+
+.header-center .searchbox .serach-icon {
+    padding: 10px;
+    height: 100%;
+    width: 15%;
+    background-color: var(--light-grey);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.header-center .searchbox .serach-icon .fa-search {
+    font-size: 18px;
+}
+
+.header-center .voice-search-button {
+    width: 40px;
+    height: 40px;
+    background-color: var(--dark-grey);
+    border-radius: 50%;
+    display: Flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 7px;
+    cursor: pointer;
+}
+
+.header-center .voice-search-button .fa-microphone {
+    font-size: 18px;
 }
