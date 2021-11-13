@@ -20,6 +20,7 @@
 body {
     margin: 0;
     box-sizing: border-box;
+    background-color: var(--dark-grey);
 }
 
 /* Header */
@@ -98,7 +99,7 @@ body {
 .header-center .searchbox .search-form {
     width: 85%;
     height: 100%;
-    align-item: center;
+    align-items: center;
 }
 
 .header-center .searchbox .search-form input {
@@ -171,9 +172,51 @@ body {
     font-size: 20px;
 }
 
-.header-end .header-avatar img {
-    width: 28px;
-    height: 28px;
+.header-end .header-avatar .avatar-picture {
+    width: 26px;
+    height: 26px;
+    background-color: blue;
     border-radius: 50%;
-    margin-left: 0px;
+    margin-left: 5px;
 }
+
+/* Player */
+
+.player {
+    height: 300px;
+    background-color: cadetblue;
+    overflow: hidden;
+    position: relative;
+}
+
+.player .container {
+    width: 100%;
+    max-width: 560px;
+    background-color: chartreuse;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.player .container::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 0;
+    padding-top: 56.25%;
+}
+
+.player .container .video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* Video information */
+
+/* Uploader */
+
+/* Next Viedos */

@@ -15,3 +15,7 @@ Users sholud be able to:
 
 -   Html
 -   CSS
+
+### Useful resource site
+
+-   https://goddino.tistory.com/181[글쓰는 갓디노] : 컨텐츠 영상 16:9비율 유지 + 가운데 정렬
