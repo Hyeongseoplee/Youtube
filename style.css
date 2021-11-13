@@ -83,6 +83,7 @@ body {
 .header-center {
     display: flex;
     width: 70%;
+    justify-content: center;
 }
 
 .header-center .searchbox {
@@ -97,6 +98,7 @@ body {
 .header-center .searchbox .search-form {
     width: 85%;
     height: 100%;
+    align-item: center;
 }
 
 .header-center .searchbox .search-form input {
@@ -154,4 +156,24 @@ body {
 
 .header-center .voice-search-button .fa-microphone {
     font-size: 18px;
+}
+
+/* Header End */
+
+.header-end {
+    width: 10%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.header-end .notification-button .fa-bell {
+    font-size: 20px;
+}
+
+.header-end .header-avatar img {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    margin-left: 0px;
 }
