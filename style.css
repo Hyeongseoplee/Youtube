@@ -12,8 +12,9 @@
     --font-large: 26px;
     --font-medium: 18px;
     --font-small: 14px;
+    --font-extra-small: 13px;
 
-    --icon-head: 18px;
+    --icon-head: 20px;
     --icon-metaInfo: 20px;
 }
 
@@ -188,12 +189,24 @@ body {
     font-size: var(--icon-head);
 }
 
-.header-end .header-avatar .avatar-picture {
-    width: 26px;
-    height: 26px;
-    background-color: blue;
+/* avatar */
+.header__avatar .avatar,
+.video-secondary-info__avatar .avatar {
+    background: url(images/avatar.png);
+    background-position: center center;
+    background-size: cover;
     border-radius: 50%;
+}
+
+.avatar--small {
     margin-left: 5px;
+    width: 30px;
+    height: 30px;
+}
+
+.avatar--big {
+    width: 48px;
+    height: 48px;
 }
 
 /* Player */
@@ -220,7 +233,10 @@ body {
 }
 
 /* Video information */
+/* - Primary-info */
+/* - Secondary-info */
 
+/* Primary-info */
 .video-primary-info {
     width: 100%;
     border-bottom: 1px solid var(--light-grey);
@@ -276,8 +292,8 @@ body {
     background-color: var(--lighter-grey);
     display: inline-block;
     border-radius: 50%;
-    margin: 0px 3px;
-    transform: translate(1px, -2px);
+    margin: 0px 4px;
+    transform: translate(0px, 2px);
 }
 
 .metaInfo .mainIcons {
@@ -317,6 +333,50 @@ body {
     font-weight: 500;
     font-size: 14px;
 }
-/* Uploader */
+
+/* Secondary-info */
+/* - Top-row */
+/* - Bottom-row */
+
+/* Top-row  */
+.video-secondary-info {
+    display: flex;
+    flex-direction: column;
+    margin: 16px 0px;
+}
+
+.video-secondary-info__top-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.top-row__avartar-info {
+    display: flex;
+    width: 15%;
+    align-items: center;
+}
+
+.video-secondary-info__metainfo {
+    margin-left: 12px;
+}
+
+.video-secondary-info__metainfo .id {
+    font-weight: 900;
+    font-size: var(--font-small);
+    margin-bottom: 3px;
+}
+
+.subscribe-btn {
+    all: unset;
+    background-color: var(--red-color);
+    border-radius: 3px;
+    padding: 10px 16px;
+    cursor: pointer;
+    color: var(--font-color);
+    font-weight: 500;
+    margin: 4px 6px;
+}
+
+/* Bottom-row */
 
 /* Next Viedos */
