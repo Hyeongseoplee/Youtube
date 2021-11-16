@@ -22,7 +22,7 @@ Users sholud be able to:
 
 ### Responsive screen
 
--   when the screen size exceeds 1024px, next video's list is arranged beside to video player
+-   1024px ~ : As the screen size exceeds 1024px, next videos section will be arranged on the left on video player
 
 ### What i plan using Js
 
